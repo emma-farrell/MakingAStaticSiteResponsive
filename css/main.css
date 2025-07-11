@@ -1,14 +1,15 @@
 /******** GLOBAL STYLES ********/
 html {
-	font-size: 16px;
-}
+	font-size:16px;
+  }
 
 body {
 	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
 	font-size: .9em;
-	color: #d3a1a1;
+	color: #000000;
 }
 
+/* The width property has been changed to max-width */
 .content-wrapper {
 	max-width: 1200px;
 	width: 90%;
@@ -26,19 +27,19 @@ h4 {
 }
 
 h1 {
-	font-size: 30px;
+	font-size: 1.875em;
 }
 
 h2 {
-	font-size: 24px;
+	font-size: 1.5em;
 }
 
 h3 {
-	font-size: 20px;
+	font-size: 1.25em;
 }
 
 h4 {
-	font-size: 12px;
+	font-size: .75em;
 }
 
 p {
@@ -48,15 +49,16 @@ p {
 /******** HEADER STYLES ********/
 /* The widths are in a percentage! */
 header {
-	/* height: 110px; */
 	display: flex;
 	justify-content: center;
+	text-align: center;	
 }
 
 header h1 {
-	margin: 0; 
-	padding: 38px 0;
 	width: 100%;
+	margin: 0;
+	padding: 38px 0;
+	border-bottom: 3px solid #45610E;
 }
 
 header h1 span {
@@ -73,11 +75,12 @@ header nav ul {
 }
 
 header nav ul li {
-	font-size: .875em;
+	width: 100%;
+	font-size: 0.875em;
 	font-weight: 700;
 	text-transform: uppercase;
-	padding: 0 10px;
-	width: 100%;
+	padding: 10px 0;
+	list-style-type: none;
 }
 
 header nav ul li a {
@@ -117,21 +120,20 @@ header nav ul li a {
 .section-three {
 	box-sizing: border-box;
 	padding: 0 40px;
-	width: 100%;
 }
 
 .section-one {
-	width: 29%;
+	width: 100%; /* 29%; */
 }
 
 .section-two {
-	width: 42%;
-	border-left: 5px solid #EEE;
-	border-right: 5px solid #EEE;
+	width: 100%; /* 42%; */
+	border-top: 5px solid #EEE;
+	border-bottom: 5px solid #EEE;
 }
 
 .section-three {
-	width: 29%;
+	width: 100%; /* 29%; */
 }
 
 .bottom-section h3 {
@@ -145,16 +147,15 @@ header nav ul li a {
 
 .menu-list li {
 	color: #45610E;
-	font-size: 16px;
-	line-height: 1rem;
+	font-size: 1em;
+	line-height: 36px;
 }
 
 /******** FOOTER STYLES ********/
 /* The widths are in a percentage! */
 footer {
 	display: flex;
-	justify-content: center;
-	text-align: center;
+  	justify-content: center;
 	margin-top: 8px;
 }
 
@@ -162,5 +163,5 @@ footer span {
 	font-family: 'Galada', cursive;
 	text-transform: lowercase;
 	color: #45610E;
-	font-size: .875rem;
+	font-size: 0.875em;
 }
